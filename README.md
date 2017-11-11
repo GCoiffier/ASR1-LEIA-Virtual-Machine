@@ -1,6 +1,6 @@
-# ASR1 2016 @ENS de Lyon
 # LEIA Virtual Machine
 ## Guillaume Coiffier, Nicolas Champseix
+## ASR1 2016 @ENS de Lyon
 
 ## Notes
 
@@ -28,14 +28,13 @@ le fichier execute.sh (opt) file permet de lancer à la fois asm.py et le simula
 Le script python picture.py prend une image de taille inférieure à 160*128 en .png, stockée dans le dossier IMG, et crée le fichier .s qui permet d'afficher cette image dans la mémoire.
 
 Pour afficher directement une image "nom.png" dans la mémoire, utilisez la commande :
-	build_pic.sh nom
+`build_pic.sh nom`
 
 Attention : il vaut mieux que l'image utilise moins de 16 couleurs, sinon il y a un risque de débordement du programme (plus de 45056 lignes de code). Certes, cela limite grandement le nombre d'images que l'on peut afficher...
 
 PS : Ce script nous a permis de générer procéduralement la fonction putchar, grâce aux images de lettres du dossier IMG/lettres (faites à la main !) (executez le fichier allchar.s)
 
-
-## Demonstration graphique
+## Demonstration graphique
 
 Pour la démonstration, la suggestion est :
-./build_pic.sh nyan (ou lancez nyan.s)  puis   house.s
+`./build_pic.sh nyan` (ou lancez nyan.s)  puis   house.s
